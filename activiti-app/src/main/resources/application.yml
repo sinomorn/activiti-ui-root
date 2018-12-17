@@ -1,0 +1,30 @@
+spring:
+  liquibase:
+    enabled: false
+  jpa:
+    properties:
+      hibernate:
+        cache:
+          use_second_level_cache: false
+    open-in-view: true
+    generate-ddl: true
+    show-sql: true
+  freemarker:
+    check-template-location: false
+  activiti:
+    check-process-definitions: false
+    database-schema-update: true
+  aop:
+    proxy-target-class: false
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://47.101.49.5:3306/eports_progress?useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: Kmdlmm1218.
+server:
+  port: 9999
+  servlet:
+    context-path: "/activiti-app"
+
+
+
